@@ -34,4 +34,8 @@ module.exports = {
     },
   },
   plugins: [require('flowbite/plugin'), require('@tailwindcss/forms')],
+  safelist: [{
+    pattern: /(bg|text|border)-(navy|lightblue|pink|blue|gray|lightgray|darkgray|enabled)/
+}
+]
 };

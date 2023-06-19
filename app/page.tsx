@@ -4,6 +4,9 @@ import Head from 'next/head';
 import { TextField, Button } from '@/ui/controls';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { FormInputs } from '@/lib/types/form';
+import { customTheme } from '@/lib/util/cssUtil';
+
+import { Flowbite } from 'flowbite-react';
 
 export default function Home() {
   const defaultValues = { mobile: '', name: '' };
@@ -19,25 +22,27 @@ export default function Home() {
         <meta name="description" content="Sample" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <div className="flex flex-col p-4 m-6 bg-white rounded-lg border ">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <TextField
-              name="mobile"
-              label="Text input mobile"
-              type="tel"
-              control={control}
-            />
-            <TextField
-              name="name"
-              label="Text area"
-              multiline
-              control={control}
-            />
-            <Button type="submit">Submit</Button>
-          </form>
+      <Flowbite theme={{ theme: customTheme }}>
+        <div>
+          <div className="flex flex-col p-4 m-6 bg-white rounded-lg border ">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <TextField
+                name="mobile"
+                label="Text input mobile"
+                type="tel"
+                control={control}
+              />
+              <TextField
+                name="name"
+                label="Text area"
+                multiline
+                control={control}
+              />
+              <Button type="submit">Submit</Button>
+            </form>
+          </div>
         </div>
-      </div>
+      </Flowbite>
     </>
   );
 }
