@@ -41,4 +41,19 @@ export interface TextFieldProps<T = string, V = T> extends FormFieldProps<T, V>,
 export type FormInputs = {
     mobile?: number | string,
     name?: string,
+    area_code?: number | string;
 };
+
+export interface ChoiceItem<T = any> {
+    value: T;
+    label: string;
+}
+
+export type ChoiceItemValueType<T extends ChoiceItem> = T extends ChoiceItem<infer U> ? U : any;
+export interface ChoiceFieldProps<T extends ChoiceItem = ChoiceItem> extends FormFieldProps<ChoiceItemValueType<T> | ''> {
+    name: string;
+    items: readonly (T | Extract<T['value'], number | string | boolean>)[];
+    allowUnselect?: boolean;
+    onChange?: (value: T['value']) => void;
+    onClick?: (value: T['value']) => void;
+}
