@@ -20,7 +20,7 @@ export function ThemeSwitcher() {
 
   return (
     <div
-      className={classNames('p-4', {
+      className={classNames('px-4 py-2', {
         light: currentTheme === 'light',
         dark: currentTheme === 'dark',
       })}
