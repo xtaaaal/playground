@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import { Config } from 'tailwindcss';
 module.exports = {
+  darkMode: 'class',
   content: [
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -34,8 +35,10 @@ module.exports = {
     },
   },
   plugins: [require('flowbite/plugin'), require('@tailwindcss/forms')],
-  safelist: [{
-    pattern: /(bg|text|border)-(navy|lightblue|pink|blue|gray|lightgray|darkgray|enabled)/
-}
-]
+  safelist: [
+    {
+      pattern:
+        /(bg|text|border)-(navy|lightblue|pink|blue|gray|lightgray|darkgray|white|enabled)/,
+    },
+  ],
 };

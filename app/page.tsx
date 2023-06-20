@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
       <Flowbite theme={{ theme: customTheme }}>
         <div>
-          <div className="flex flex-col p-4 m-6 bg-white rounded-lg border ">
+          <div className="flex flex-col p-4 m-6 bg-white rounded-lg border border-white">
             <form onSubmit={handleSubmit(onSubmit)}>
               <TextField
                 name="mobile"
