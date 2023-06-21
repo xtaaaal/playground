@@ -44,7 +44,7 @@ export const TextField = forwardRef<HTMLDivElement, TextFieldProps>(
                     required={required}
                     type={inputType}
                     id={name}
-                    className="block px-2.5 pb-2.5 pt-4 w-full text-black bg-transparent rounded-lg border border-navy appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink focus:outline-none focus:ring-0 focus:border-pink peer"
+                    className="block px-2.5 pb-2.5 pt-4 w-full text-black bg-transparent rounded-lg border border-navy appearance-none dark:text-black dark:border-gray-600 dark:focus:border-pink focus:outline-none focus:ring-0 focus:border-pink peer"
                     placeholder=" "
                     {...field}
                   />
@@ -58,7 +58,7 @@ export const TextField = forwardRef<HTMLDivElement, TextFieldProps>(
                   <textarea
                     required={required}
                     id={name}
-                    className="block px-2.5 pb-2.5 pt-4 w-full text-black bg-transparent rounded-lg border border-navy appearance-none dark:text-white dark:border-gray-600 dark:focus:border-pink focus:outline-none focus:ring-0 focus:border-pink peer"
+                    className="block px-2.5 pb-2.5 pt-4 w-full text-black bg-transparent rounded-lg border border-navy appearance-none dark:text-black dark:border-gray-600 dark:focus:border-pink focus:outline-none focus:ring-0 focus:border-pink peer"
                     placeholder=" "
                     {...field}
                   />

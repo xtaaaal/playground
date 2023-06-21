@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={classNames(
           notoSansTc.className,
-          'bg-lightgray text-black dark:bg-black dark:text-white'
+          'bg-lightgray text-black dark:bg-black dark:text-lightgray'
         )}
       >
         <Providers>

@@ -40,7 +40,7 @@ export const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
                           key={item.value}
                           onClick={() => field.onChange(item.value)}
                         >
-                          {item.label}
+                          <span className="dark:text-black">{item.label}</span>
                         </FbDropdown.Item>
                       ))}
                     </FbDropdown>
