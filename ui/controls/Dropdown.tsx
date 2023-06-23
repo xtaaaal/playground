@@ -17,6 +17,14 @@ export interface DropdownProps<T = string> extends ChoiceFieldProps {
 
 export const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
   ({ placeholder, required, label, name, control, items, ...props }, ref) => {
+    const elementOnclick = () => {
+      const elem = document.activeElement as HTMLElement;
+
+      if (elem) {
+        elem?.blur();
+      }
+    };
+
     return (
       <>
         <div className="flex w-full">
@@ -38,7 +46,10 @@ export const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
                       {items.map((item) => (
                         <FbDropdown.Item
                           key={item.value}
-                          onClick={() => field.onChange(item.value)}
+                          onClick={() => {
+                            elementOnclick();
+                            field.onChange(item.value);
+                          }}
                         >
                           <span className="dark:text-black">{item.label}</span>
                         </FbDropdown.Item>
