@@ -26,6 +26,7 @@ export function ThemeSwitcher() {
       })}
     >
       <button
+        className="flex items-center"
         onClick={() => setTheme(currentTheme === 'light' ? 'dark' : 'light')}
       >
         <Icon icon="themeButton" size="small" />

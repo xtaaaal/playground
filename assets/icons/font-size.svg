@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 10" width="22" height="10">
+    <path id="header-font-size-large" class="hc-fill-white" d="M5.44.44,9.59,9.61H8.49L7.42,7.2H2.47L1.39,9.61H.33L4.48.44ZM7,6.28,5,1.64,2.87,6.28Z" fill="#484848" style="fill: rgb(255, 255, 255);"></path>
+    <path id="header-font-size-regular" class="hc-fill-white" d="M13.52,2.56l3.19,7h-.85L15,7.76H11.23L10.4,9.61H9.59l3.19-7Zm1.21,4.49L13.14,3.48l-1.6,3.57Z" fill="#484848" style="fill: rgb(8, 255, 213);"></path>
+    <path id="header-font-size-small" class="hc-fill-white" d="M19.47,4.67,21.7,9.61h-.6l-.57-1.3H17.86l-.58,1.3h-.56L19,4.67Zm.84,3.15L19.2,5.32l-1.12,2.5Z" fill="#484848" style="fill: rgb(255, 255, 255);"></path>
+</svg>
